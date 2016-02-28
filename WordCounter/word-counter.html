@@ -69,16 +69,14 @@
 <div class="container">
 	<div class="row"> 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-       		<textarea id='text' class="col-lg-12 col-md-12 col-sm-12 col-xs-12" rows="10">
-       	
-       		</textarea>
+       		<textarea id='text' class="col-lg-12 col-md-12 col-sm-12 col-xs-12" rows="10"></textarea>
 		</div>
     </div>
 
     <div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs=12">
-			<button id="clear" class="btn btn-default btn-lg" type="submit" onclick="clearAll()">clear</button>
-			<button id="count" class="btn btn-default btn-lg" type="submit" onclick="start()">count</button>
+			<button id="clear" class="btn btn-default btn-lg" type="submit" >clear</button>
+			<button id="count" class="btn btn-default btn-lg" type="submit" >count</button>
 			<h3>words: <span id="wordcount">0</span><h3>
 			<h3>characters(with spaces): <span id="charcount">0</span><h3>
 			<h3>letters: <span id="lettercount">0</span></h3>
@@ -129,12 +127,20 @@
 		countLetter();
 	}
 
+	var setCount = document.getElementById('count');
+	setCount.onclick = start;
+
+
+
 	function clearAll() {
 		document.getElementById('text').value = '';
 		document.getElementById("wordcount").innerHTML = 0;
 		document.getElementById("lettercount").innerHTML = 0;
 		document.getElementById("charcount").innerHTML = 0;
 	}
+
+	var clearText = document.getElementById('clear');
+	clearText.onclick = clearAll;
 	
 	function countWords() {
 		var s = document.getElementById("text").value;
