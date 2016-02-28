@@ -118,7 +118,7 @@ section {
 }
 
 section p {
-  width: 85%;
+  max-width: 900px;
 }
 
 #home {
