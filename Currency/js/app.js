@@ -11,7 +11,7 @@ $('#convert').on('click', function() {
 	var fromVal = $('#fromVal').val();
 	$('#content').find('h3').remove();
 	
-
+	$('#content').append('<p>Loading currency exchange rates...</p>');
 
 	if (isNaN(fromVal) || fromVal < 0) {
 		alert("Invalid data input");
@@ -21,7 +21,7 @@ $('#convert').on('click', function() {
 			type: 'get',
 			cache: false,
 			success: function(data) {
-				$('#content').append('<p>Loading currency exchange rates...</p>');
+				
 				$(data.rates).each(function(index, value) {
 					var rate1;
 					var convertFrom = $('#convertFrom').val();
@@ -61,14 +61,15 @@ $('#convert').on('click', function() {
 					$('#toVal').val(result);
 					var msg = fromVal + ' ' + convertFrom + ' = ' + result + ' ' + convertTo; 
 					
-					$('#content').find('p').remove();
+					
 					$('#content').append('<h3>' + msg + '</h3>');
 					
 				});
 			}
 		});
 	}
-
+	
+	$('#content').find('p').remove();
 	
 });
 
