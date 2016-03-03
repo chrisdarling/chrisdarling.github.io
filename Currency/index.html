@@ -39,17 +39,15 @@
 		margin: 20px;
 	}
 
-	#bottom {
-		height: 20px;
-	}
+	#divPush {
+		min-height: 100px;
+	} 
 
-	h1 {
+	button, h1, h2, p,select {
 		margin: 20px;
 	}
 
-	h2 {
-		margin: 20px;
-	}
+	
 
 	p {
 		margin: 20px;
@@ -57,9 +55,7 @@
 		font-size: 1.1em;
 	}
 
-	select {
-		margin: 20px;
-	}
+	
 
 </style>
 <body>
@@ -76,7 +72,7 @@
 	<div class="container">
 
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			<h2>Convert From</h2>
 			<select id="convertFrom">
 				<option value="AUD">AUD</option>
@@ -104,7 +100,7 @@
 		
 	
 	
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			
 			<h2>Convert To</h2>
 			<select id="convertTo">
@@ -148,6 +144,8 @@
 	
 
 </div>
+
+<div id="divPush"></div>
 
 <footer>
 	<div class="container">
