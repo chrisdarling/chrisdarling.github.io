@@ -13,8 +13,10 @@ body {
     margin: 20px auto 0 auto;
 }
 
-.jumbotron p{
-	padding: 0 50px 5px 0;
+.jumbotron p, h1 {
+	width: 80%;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .content h1 {
