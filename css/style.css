@@ -13,35 +13,39 @@ body {
     margin: 20px auto 0 auto;
 }
 
+.jumbotron {
+	top: -20px;
+	position: relative;
+}
+
 .jumbotron p, h1 {
-	width: 80%;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 100%;
+	
 }
 
 #project-title {
-	padding-left: 0;
+	padding-bottom: 20px;
 }
 
-.card h3 {
-	margin-bottom: 30px;
+.panel-default h3 {
+	
 }
 
-.card p {
+.panel-default p {
 	font-size: 1.2em;
 	margin-top: 10px;
 }
 
 
-.card {
+.panel-default {
 	
-    padding-top: 20px;
+    
     margin-top: 20px;
     margin-bottom: 10px; 
    
 }
 
-.card a {
+.panel-default a {
 	margin-right: 35px;
 }
 
