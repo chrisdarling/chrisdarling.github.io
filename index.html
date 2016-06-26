@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
 
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse custom navbar-static-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -31,7 +32,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="index.html">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -40,64 +41,52 @@
 </nav>
 
 
-	<div class="jumbotron">
+	<div class="jumbotron custom">
 	<div class="container">
   		<h1>Welcome</h1>
   		<p>My name is Christopher Darling a software developer for hire. On this site you will find what side projects I am currently working on, my resume, how to get in touch with me and a little bit about myself.</p>
-  		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  		
   	</div>	
 	</div>
 
-<div class="container">
+<div class="container-fluid">
 
 	<div class="content">
 		<div class="row">
 			<div class="col-md-12" id="project-title">
-				<h1>Projects</h1>
+				<h1 id="projects">Projects</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-default">
-				  <div class="panel-heading">
-				    <h3 class="panel-title">Word Counter</h3>
-				  </div>
+			<div class="col-sm-12">
+				<div class="project">
 				 
-				  <div class="panel-body">
-				    
-				    <p class="card-text"> A web app for to counting words. </p>
+				  <a><h2>Word Counter</h2></a>
+				    <p class="card-text"> A web app for to counting words. Built with Bootstrap Framework, JQuery, and hosted on GitHub Pages.</p>
 				    <a href="WordCounter/word-counter.html" class="card-link">Demo</a>
 				    <a href="https://github.com/chrisdarling/WordCounter/blob/master/js/count.js" class="card-link">Code</a>
-				  </div>
+				  
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="panel panel-default">
-				  <div class="panel-heading">
-				    <h3 class="panel-title">Binary to Decimal Converter</h3>
-				  </div>				  
-				  <div class="panel-body">
-				    
-				    <p class="card-text">A web app for binary number conversions.</p>
+			<div class="col-sm-12">
+				<div class="project">
+				  
+				    <a><h2>Binary to Decimal Converter</h2></a>
+				    <p class="card-text">A web app for binary number conversions. Built with Bootstrap Framework, JQuery, and hosted on GitHub Pages.</p>
 				    <a href="BinayToDecimal/binary-converter.html" class="card-link">Demo</a>
 				    <a href="https://github.com/chrisdarling/BinaryConverter/blob/master/binary-converter.html" class="card-link">Code</a>
-				  </div>
+				  
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-default">
-				  <div class="panel-heading">
-				    <h3 class="panel-title">Currency Converter</h3>
-				  </div>
-				  
-				  <div class="panel-body">
-				    
-				    <p class="card-text"> A web app that uses live exchange rates for currency conversions.</p>
+			<div class="col-sm-12">
+				<div class="project">
+				    <a><h2>Currency Converter</h2></a>
+				    <p class="card-text"> A web app that uses live exchange rates for currency conversions. Built with fixer.io API, Bootstrap Framework, JQuery, Ajax and hosted on GitHub Pages.</p>
 				    <a href="Currency/index.html" class="card-link">Demo</a>
 				    <a href="https://github.com/chrisdarling/CurrencyConverter/blob/master/js/app.js" class="card-link">Code</a>
-				  </div>
+				  
 				</div>
 			</div>
 		</div>
@@ -107,8 +96,8 @@
 
 <footer class="footer">
       <div class="container">
-        <p class="text-muted">Copyright &copy; Christopher Darling, All Rights Reserved.</p>
-        <p class="text-muted">Created with Bootstrap</p>
+        <p >Copyright &copy; Christopher Darling, All Rights Reserved.</p>
+        <p >Created with Bootstrap Framework</p>
         <ul>
         	<li><a href="https://github.com/chrisdarling"><img src="icons/git.png" href="https://github.com/chrisdarling"></img></a></li>
         	<li><a href=""><img src="icons/link.png"></img></a></li>
