@@ -2,95 +2,88 @@
 <html>
 <head>
 	<title>Binary To Decimal Converter</title>
-	<!-- If IE use the latest rendering engine -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- Set the page to the width of the device and set the zoon level -->
-	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<!-- latest compiled and minified CSS-->
-	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<style type="text/css">
-	
-	html,
-	body {
-	  height: 100%;
-	  
-	}
-
-	#wrap {
-	  min-height: 100%;
-	  height: auto;
-	  margin: 0 auto -100px;
-	  padding: 0 0 60px;
-	}
-
-	#footer {
-	  height: 100px;
-	  background-color: ;
-	}
-	
-	#divPush {
-		height: 100px;
-	}
-
-
-
-	#input, #output, #convert-bin {
-		margin-top: 20px;
-	}
-
-
-	#binary {
-		padding-top: 60px;
-	}
-
-	
-
-</style>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div id="wrap">
-<div class="container">
 
-	<div class="page-header">
-		<h1>Binary to Decimal Converter</h1>
+<nav class="navbar navbar-inverse custom navbar-static-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">Christopher Darling</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+	<div class="jumbotron custom">
+	<div class="container">
+  		<h1>Binary To Decimal Converter</h1>
+  	</div>	
 	</div>
-	
-</div>
 
-<div class="container">
+<div class="content">
+
+	<div class="row">
+		<div class="col-md-12" id="project-title">
+			<h1>Binary To Decimal Converter</h1>
+		</div>
+	</div>
 	
 	<div class="row">
-		
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="binary">
-			<h3>Binary to Decimal</h3>
-			
-			<div class="input-group input-group-lg" id="input">
-				<span class="input-group-addon">Input</span>
-				<input id="binary-input" type="text" class="form-control" placeholder="Enter binary number here">
+		<div class="col-md-12" id="binary">
+			<div class="project">
+				<div class="input-group input-group-lg" id="input">
+					<span class="input-group-addon">Input</span>
+					<input id="binary-input" type="text" class="form-control" placeholder="Enter binary number here">
+				</div>
+
+				<button id="convert-bin" type="submit" class = "btn-primary btn-lg">convert</button>
+
+				<div class="input-group input-group-lg" id="output">
+					<span class="input-group-addon">Output</span>
+					<input id="output-bin" type="text" class="form-control" placeholder="" disabled="disabled">
+				</div>
 			</div>
-
-			<button id="convert-bin" type="submit" class = "btn-primary btn-lg">convert</button>
-
-			<div class="input-group input-group-lg" id="output">
-				<span class="input-group-addon">Output</span>
-				<input id="output-bin" type="text" class="form-control" placeholder="">
-			</div>
-
-			
 		</div>
-
 	</div>
-
-</div>
 </div>
 
-<div id="divPush"></div>
+
+
 
 <footer class="footer">
       <div class="container">
-        <p class="text-muted">Created by Christopher Darling</p>
+        <p >Copyright &copy; Christopher Darling, All Rights Reserved.</p>
+        <p >Created with Bootstrap Framework</p>
+        <ul>
+        	<li><a href="https://github.com/chrisdarling"><img src="../icons/git.png" href="https://github.com/chrisdarling"></img></a></li>
+        	<li><a href=""><img src="../icons/link.png"></img></a></li>
+        	<li><a href="mailto:cdarlin119@gmail.com"><img src="../icons/gmail.png"></img></a></li>
+        </ul>
       </div>
 </footer>
 
@@ -143,7 +136,7 @@
 
 </script>
 
-<script src="js/bootstrap.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

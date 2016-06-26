@@ -115,6 +115,11 @@ footer {
 	border-color: #eeeeee;
 }
 
+.input-group {
+	padding-bottom: 10px;
+	padding-top: 17px;
+}
+
 .project a {
 	color: #404040;
 }
