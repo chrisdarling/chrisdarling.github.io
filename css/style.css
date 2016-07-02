@@ -1,7 +1,8 @@
 
 
-body {
-	background-color: #DFE2DB;
+html, body {
+	
+	width: 100% !important;
 }
 
 
@@ -50,6 +51,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 #project-title {
 	padding-bottom: 20px;
+
+}
+
+#project-title h1 {
+	font-size: 1.7em !important;
 }
 
 .panel-default h3 {
@@ -90,36 +96,44 @@ footer ul {
 	margin-left: -32px;
     margin-top: -9px;
 }
-footer li {
-	text-decoration: none;
-	display: inline;
-	margin-right: 20px;
-}
+
 
 footer {
 	margin-top: 5%;
 	background-color: #fff;
-	border-top: 1px solid;
+	border: 1px solid;
 	border-color: #eeeeee;
 	padding-top: 45px;
     padding-bottom: 45px;
+    border-radius: 20px
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
 .project {
 	font-weight: 500;
 	font-size: 1.5em;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	padding-bottom: 20px; 
 	border-bottom: 1px solid;
 	border-color: #eeeeee;
 }
 
 .project a {
 	color: #404040;
+	
 }
 
 .project a:hover {
 	color: #337ab7;
 	text-decoration: none;
+}
+
+.project h2 {
+	margin-bottom: 30px;
+}
+
+.project p {
+	margin-bottom: 30px;
 }
 
 #projects {
