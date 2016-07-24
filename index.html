@@ -141,18 +141,18 @@
 					</div>
 					<div class="row">
 						<div style="margin-right: 15px; margin-left: 15px;" class="col-md-12">
-						<form action="https://formspree.io/cdarlin119@gmail.com" method="POST">	
+						<form id="form" action="https://formspree.io/cdarlin119@gmail.com" method="POST">	
 							<div class="form-horizontal" role="form">
 					            <div class="form-group">
 					                <label for="name">Name <span style="color: red;">*</span></label>
-					                <input type="text" class="form-control" name="name" id="name">
+					                <input type="text" class="form-control" name="name" id="name" required>
 					            </div>
 					        </div>
 
 					        <div class="form-horizontal" role="form">
 					            <div class="form-group">
 					                <label for="email">Email <span style="color: red;">*</span></label>
-					                <input type="email" class="form-control" name="_replyto" id="email">
+					                <input type="email" class="form-control" name="_replyto" id="email" required>
 					            </div>
 					        </div>
 
@@ -162,7 +162,7 @@
 					        <div class="form-horizontal" role="form">
 					            <div class="form-group">
 					                <label for="message">Message <span style="color: red;">*</span></label>
-					               <textarea rows="8" type="text" id="message" name="message" class="form-control"></textarea>
+					               <textarea rows="8" type="text" id="message" name="message" class="form-control" required=""></textarea>
 
 					               <button type="submit" value="Send" class="btn btn-primary" style="margin-top: 20px">Submit</button>
 
@@ -224,6 +224,8 @@
 		        scrollTop: ($( $(this).attr('href') ).offset().top)
 		    }, 500);
 		    return false;
+
+		    $('#form').validate();
 
 		});
 
