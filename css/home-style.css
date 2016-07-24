@@ -6,6 +6,7 @@ html, body {
 	
 	width: 100% !important;
   overflow-x: hidden !important;
+  background-color: #eee !important;
 	
 }
 
@@ -228,7 +229,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 #contact {
-	background-color: #eee;
+	background-color: rgb(76, 83, 100);
+  color: #fff;
 }
 
 footer p {
@@ -285,6 +287,7 @@ footer {
   box-sizing: border-box;
   border-radius: 2px;
   background-clip: padding-box;
+  background-color: #fff !important;
 }
 .card span.card-title {
     color: #fff;
@@ -303,6 +306,7 @@ footer {
   position: relative;
   z-index: -1;
   max-height: 350px;
+  z-index: 1 !important;
 }
 .card .card-image span.card-title {
   position: absolute;
