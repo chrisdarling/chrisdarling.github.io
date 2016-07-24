@@ -225,7 +225,9 @@
 		    }, 500);
 		    return false;
 
-		    $('#form').validate();
+		    $('#form').validate({
+		    	onsubmit: false
+		    });
 
 		});
 
