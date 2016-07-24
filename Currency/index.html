@@ -14,137 +14,126 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse custom navbar-static-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="../index.html">Christopher Darling</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
 
 	<div class="jumbotron custom">
-	<div class="container">
-  		<h1>Currency Converter</h1>
-  	</div>	
-	</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2">
+					
+					<div class="project">
+						<h2>Currency Converter</h2>
+						<div id="content"></div>
+						<div class="row">
+							<div class="col-xs-6">
+								<select id="convertFrom" class="form-control">
+									<option value="AUD">AUD</option>
+									<option value="BGN">BGN</option>
+									<option value="CAD">CAD</option>
+									<option value="CNY">CNY</option>
+									<option value="EUR" selected="">EUR</option>
+									<option value="GBP">GBP</option>
+									<option value="JPY">JPY</option>
+									<option value="RUB">RUB</option>
+									<option value="USD">USD</option>
+								</select>
+							</div>	
+						</div>			
 
-	
-	
+						<div class="input-group input-group-lg" id="input">
+							<span class="input-group-addon">Amount</span>
+							<input id="fromVal" type="text" class="form-control" placeholder="">
+						</div>
 
+						<!---
+						<label>Amount</label>
+						<input id="fromVal" type="text"></input> ---->
 
+						<div class="row">
+							<div class="col-xs-6">
+								<select id="convertTo" class="form-control">
+									<option value="AUD">AUD</option>
+									<option value="BGN">BGN</option>
+									<option value="CAD">CAD</option>
+									<option value="CNY">CNY</option>
+									<option value="EUR">EUR</option>
+									<option value="GBP">GBP</option>
+									<option value="JPY">JPY</option>
+									<option value="RUB">RUB</option>
+									<option value="USD" selected="">USD</option>
+								</select>
+							</div>
+						</div>		
 
-	<div class="content">
+						<div class="input-group input-group-lg" id="output">
+							<span class="input-group-addon">Amount</span>
+							<input id="toVal" type="text" class="form-control" placeholder="" disabled="disabled">
+						</div>
 
-	<div class="row">
-		<div class="col-md-12" id="project-title">
-			<h1>Currency Converter</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<div class="project">
-				<h2>Convert From</h2>
-				<select id="convertFrom">
-					<option value="AUD">AUD</option>
-					<option value="BGN">BGN</option>
-					<option value="CAD">CAD</option>
-					<option value="CNY">CNY</option>
-					<option value="EUR">EUR</option>
-					<option value="GBP">GBP</option>
-					<option value="JPY">JPY</option>
-					<option value="RUB">RUB</option>
-					<option value="USD">USD</option>
-				</select>
-
-				<div class="input-group input-group-lg" id="input">
-					<span class="input-group-addon">Amount</span>
-					<input id="fromVal" type="text" class="form-control" placeholder="">
+						<button id="convert" class="btn-primary btn-lg" type="submit" >Convert</button>
+						<button id="clear" type="submit" class = "btn-primary btn-lg">Clear</button>
+					</div>	
+						
+					
 				</div>
-
-				<!---
-				<label>Amount</label>
-				<input id="fromVal" type="text"></input>
-				-->
 			</div>	
-		</div>
+
+	  		
+	  	</div>	
+	</div>
+
+	
+	
+
+
+
+	
+
+	
+
+
 
 		
 	
 	
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<div class="project">	
-				<h2>Convert To</h2>
-				<select id="convertTo">
-					<option value="AUD">AUD</option>
-					<option value="BGN">BGN</option>
-					<option value="CAD">CAD</option>
-					<option value="CNY">CNY</option>
-					<option value="EUR">EUR</option>
-					<option value="GBP">GBP</option>
-					<option value="JPY">JPY</option>
-					<option value="RUB">RUB</option>
-					<option value="USD">USD</option>
-				</select>
-
-				<div class="input-group input-group-lg" id="output">
-					<span class="input-group-addon">Amount</span>
-					<input id="toVal" type="text" class="form-control" placeholder="" disabled="disabled">
-				</div>
-			</div>	
-		</div>
-	</div>
-
-
-	<div class="row">
-			<div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				
-			</div>
-	</div>
-
-
-	<div class="row">
-			<div id="#bottom" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<button id="convert" class="btn btn-default btn-lg" type="submit" >CONVERT</button>
-				
-			</div>
-	</div>
-
+		
 		
 
-	</div>
-
+	
 	
 
 
-<footer class="footer">
-      <div class="container">
-        <p >Copyright &copy; Christopher Darling, All Rights Reserved.</p>
-        <p >Created with Bootstrap Framework</p>
-        <ul>
-        	<li><a href="https://github.com/chrisdarling"><img src="../icons/git.png" href="https://github.com/chrisdarling"></img></a></li>
-        	<li><a href=""><img src="../icons/link.png"></img></a></li>
-        	<li><a href="mailto:cdarlin119@gmail.com"><img src="../icons/gmail.png"></img></a></li>
-        </ul>
-      </div>
+<footer class="footer" id="footer">
+    <div class="navbar navbar-inverse custom navbar-static-bottom">
+      	<div  class="contianer">
+      		<div class="row">
+      			<div class="col-xs-12 col-sm-12  col-md-10 col-md-offset-1">
+      				<div style="margin-left: 15px;" class="row">
+	      				<div class="col-md-4">
+					        <p >Copyright &copy; Christopher Darling, All Rights Reserved.</p>
+					        <p >Created with Bootstrap Framework</p>
+					        <ul class="list-inline">
+					        	<li><a href="https://github.com/chrisdarling"><img src="../icons/git.png" href="https://github.com/chrisdarling"></a></li>
+					        	<li><a href=""><img src="../icons/link.png"></a></li>
+					        	<li><a href="mailto:cdarlin119@gmail.com"><img src="../icons/gmail.png" style="padding-top: 5px;"></a></li>
+					        </ul>
+				        </div>
+				        <div class="col-md-4"></div>
+				        <div class="col-md-4">
+	      					<ul id="navigation-footer" class="list-inline">
+						        <li><a href="../" class="nav-link">Home</a></li> 	&#9702;
+						        <li><a href="../#projects" class="nav-link">Projects</a></li> &#9702;
+						        <li><a href="../#contact" class="nav-link">Contact</a></li>
+						      </ul>
+	      				</div>
+
+
+			        </div>
+		        </div>
+		    </div>    
+       </div>
+    </div>
 </footer>
 
 

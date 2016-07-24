@@ -9,77 +9,36 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important; 
 }
 
-.navbar-inverse a { color: #fff !important; }
-
-.navbar-inverse a:hover { background: rgb(96, 115, 120) !important; }
-
-
-.navbar.navbar-inverse.custom {
-	background-color: rgb(21, 48, 56);
-	border-color: rgb(21, 48, 56);
-	color: #fff;
-
-}
-
-.content {
-	width: 65%;
-    margin: 20px auto 0 auto;
-    min-width: 350px;
-
-
-
-}
-
-.jumbotron.custom {
-	background: rgb(21, 48, 56);
-	color: #fff;
-	padding-bottom: 133px;
-}
-
 .jumbotron {
-	top: -20px;
-	position: relative;
-	padding-bottom: 133px;
-	
+	height: 100vh;
+	    margin-bottom: 0 !important;
 }
 
-.jumbotron p, h1 {
-	width: 100%;
-	
+#input, #output {
+	margin: 20px 0 20px 0;
 }
 
-#project-title {
-	padding-bottom: 20px;
+.project {
+	margin-top: 20%;
 }
 
-.panel-default h3 {
-	
+.project h2 {
+	margin-bottom: 20px;
 }
 
-.panel-default p {
-	font-size: 1.2em;
-	margin-top: 10px;
+button {
+	margin-right: 7px !important;
 }
 
 
-.panel-default {
-	
-    
-    margin-top: 20px;
-    margin-bottom: 10px; 
-   
-}
 
-.panel-default a {
-	margin-right: 7px;
-}
 
 footer p {
-	text-align: center;
+	
 	padding-top: 10px;
 	padding-bottom: 0px;
-	font-size: 0.8em !important;
-
+	color: rgb(244, 244, 246);
+	font-size: 1em !important;
 }
 
 footer p:nth-child(2) {
@@ -87,98 +46,39 @@ footer p:nth-child(2) {
 }
 
 footer ul {
-	text-align: center;
+	
 	margin-left: -32px;
     margin-top: -9px;
 }
-footer li {
-	text-decoration: none;
-	display: inline;
-	margin-right: 20px;
-}
+
 
 footer {
-	margin-top: 5%;
-	background-color: #fff;
-	border-top: 1px solid;
-	border-color: #eeeeee;
+	
+	background-color: #333333;
 	padding-top: 45px;
-    padding-bottom: 45px;
+  padding-bottom: 45px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
-.project {
-	font-weight: 500;
-	font-size: 1.5em;
-	margin-bottom: 20px;
-	border-bottom: 1px solid;
-	border-color: #eeeeee;
+#navigation-footer  {
+  margin-top: 10px;
 }
 
-.input-group {
-	padding-bottom: 10px;
-	padding-top: 17px;
+.navbar-inverse a { color: #fff !important; }
+
+.navbar-inverse a:hover { background: rgb(96, 115, 120) !important; }
+
+
+.navbar.navbar-inverse.custom {
+	background-color: #333333;
+	border-style: none;
+	opacity: 25%;
+	color: #fff;
+	margin-bottom: 0px;
+
 }
 
-.project a {
-	color: #404040;
-}
 
-.project a:hover {
-	color: #337ab7;
-	text-decoration: none;
-}
-
-#projects {
-	text-align: center;
-
-    font-size: 2.5em;
-}
-
-@media (max-width: 1600px) {
-  
-
-  * {
-  	font-size: 18px !important;
-   	
-  }
-
-  .container h1 {
-  	font-size: 1.9em !important;
-  }
- 
-
- }
-
-
-@media (max-width: 600px) {
-  
-
-  * {
-  	font-size: 14px !important;
-   	
-  }
-
-  .container h1 {
-  	font-size: 1.9em !important;
-  }
- 
-
- }
-
- @media (max-width: 900px) {
-  
-
-  * {
-  	font-size: 16px !important;
-   	
-  }
-
-  .container h1 {
-  	font-size: 1.9em !important;
-  }
- 
-
- }
 
 
 

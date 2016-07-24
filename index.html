@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home-style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -15,98 +15,221 @@
 </head>
 <body>
 <div id="page">
-<nav class="navbar navbar-inverse custom navbar-static-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Christopher Darling</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
 
-	<div class="jumbotron custom">
-	<div class="container">
-  		<h1>Welcome</h1>
-  		<p>My name is Christopher Darling a software developer for hire. On this site you will find what side projects I am currently working on, my resume, how to get in touch with me and a little bit about myself.</p>
-  		
-  	</div>	
-	</div>
-
-<div class="container-fluid">
-
-	<div class="content">
-		<div class="row">
-			<div class="col-md-12" id="project-title">
-				<h1 id="projects">Projects</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="project">
-				    <a href="Currency/index.html"><h2>Currency Converter</h2></a>
-				    <p class="card-text"> A web app that uses live exchange rates for currency conversions. Built with fixer.io API, Bootstrap Framework, JQuery, Ajax and hosted on GitHub Pages.</p>
-				    <a href="Currency/index.html" class="card-link">Demo</a>
-				    <a href="https://github.com/chrisdarling/CurrencyConverter/blob/master/js/app.js" class="card-link">Code</a>	  
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<div class="project">
-				  
-				    <a href="BinayToDecimal/binary-converter.html"><h2>Binary to Decimal Converter</h2></a>
-				    <p class="card-text">A web app for binary number conversions. Built with Bootstrap Framework, JQuery, and hosted on GitHub Pages.</p>
-				    <a href="BinayToDecimal/binary-converter.html" class="card-link">Demo</a>
-				    <a href="https://github.com/chrisdarling/BinaryConverter/blob/master/binary-converter.html" class="card-link">Code</a>			  
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<div class="project">
-				 
-				  <a href="WordCounter/word-counter.html"><h2>Word Counter</h2></a>
-				    <p class="card-text"> A web app for to counting words. Built with Bootstrap Framework, JQuery, and hosted on GitHub Pages.</p>
-				    <a href="WordCounter/word-counter.html" class="card-link">Demo</a>
-				    <a href="https://github.com/chrisdarling/WordCounter/blob/master/js/count.js" class="card-link">Code</a>
-				</div>
-			</div>
-
-		</div>
-		<div class="row">
+	
+		<div id="home" class="jumbotron" style="background-image: url('pics/fire.jpg');">
+			
+			<div class="container" style="background-color: rgba(0, 0, 0, 0.5)">
+				<div class="row">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2">
+						<div class="jumbotron-content">
+							<h1 class="text-center">Christopher Darling</h1>
+							<p class="text-center"><em> I'm an Software Engineer, with extensive practical experience in software development, creative direction and project management; devoted to Front End Development and Data Modeling.</em></p>
+							
+						      <ul id="navigation">
+						        <li><a href="#home" class="nav-link">Home</a></li> 	&#9702;
+						        <li><a href="#projects" class="nav-link">Projects</a></li> &#9702;
+						        <li><a href="#contact" class="nav-link">Contact</a></li>
+						      </ul>
+						</div>      
+				    </div>
+			    </div>
+		    </div>  
+		   
 			
 		</div>
-	</div> <!--- End of content div -->
+		
+
+
+
+<div  class="container-fluid">
+
+	
+		
+		<div id="project" class="row" >
+			<div  class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2">
+				<div id="project-container">
+				<div class="row">
+					<div class="col-md-12" id="project-title">
+						<h1 id="projects" class="text-center">Projects</h1>
+					</div>
+				</div>
+				
+				<div class=" row">
+					<div class="col-sm-6 col-md-6">
+						<div class="card">
+							<div class="card-image">
+				                <img class="img-responsive" src="pics/app.png">
+				                   
+				            </div>
+				            
+				            <div class="card-content">
+							    <a href="Currency/index.html"><h2>Currency Converter</h2></a>
+							    <p class="card-text"> A web app that uses live exchange rates for currency conversions. Built with fixer.io API, Bootstrap Framework, JQuery, Ajax and hosted on GitHub Pages.</p>
+						    </div>
+						    
+						    
+						    <div class="card-action">
+							    <a href="Currency/" class="text-center">Demo</a>
+							    <a href="https://github.com/chrisdarling/CurrencyConverter/blob/master/js/app.js" class="text-center">Code</a>
+							</div>
+						    	  
+						</div>
+					</div>
+				
+
+				
+					<div class="col-sm-6 col-md-6">	
+						<div class="card">
+
+							<div class="card-image">
+				                <img class="img-responsive" src="pics/app2.png">
+				                   
+				            </div>
+						  
+						  	<div class="card-content">
+							    <a href="BinayToDecimal/index.html"><h2>Binary to Decimal Converter</h2></a>
+							    <p class="card-text">A web app for binary number conversions. Built with Bootstrap Framework, JQuery, and hosted on GitHub Pages.</p>
+							</div>
+							<div class="card-action">    
+							    <a href="BinayToDecimal/" class="card-link">Demo</a>
+							    <a href="https://github.com/chrisdarling/BinaryConverter/blob/master/binary-converter.html" class="card-link">Code</a>
+						    </div>			  
+						</div>
+					</div>
+				
+
+				
+					<div class="col-sm-6 col-md-6">	
+						<div class="card">
+							<div class="card-image">
+				                <img class="img-responsive" src="pics/app3.png">
+				                   
+				            </div>
+
+				            <div class="card-content">
+						  		<a href="WordCounter/index.html"><h2>Word Counter</h2></a>
+						    	<p class="card-text"> A web app for to counting words. Built with Bootstrap Framework, JQuery, and hosted on GitHub Pages.</p>
+						    </div>	
+
+						    <div class="card-action">
+							    <a href="WordCounter/" class="card-link">Demo</a>
+							    <a href="https://github.com/chrisdarling/WordCounter/blob/master/js/count.js" class="card-link">Code</a>
+						    </div>
+						</div>
+					</div>
+				</div> 
+
+				</div>
+
+			</div>
+
+		</div>
+		
+
+		<div  id="contact" class="row" >
+			<div  class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2">
+				<div id="contact-container">
+					<div class="row">
+						<div class="col-md-12" id="project-title">
+							<h1  class="text-center">Contact</h1>
+							<p >Project requests, questions, or just want to say hi? Please do not hesitate to contact me.</p>
+
+							
+						</div>
+					</div>
+					<div class="row">
+						<div style="margin-right: 15px; margin-left: 15px;" class="col-md-12">
+							
+							<div class="form-horizontal" role="form">
+					            <div class="form-group">
+					                <label for="name">Name <span style="color: red;">*</span></label>
+					                <input type="text" class="form-control" id="name">
+					            </div>
+					        </div>
+
+					        <div class="form-horizontal" role="form">
+					            <div class="form-group">
+					                <label for="email">Email <span style="color: red;">*</span></label>
+					                <input type="email" class="form-control" id="email">
+					            </div>
+					        </div>
+
+					        <div class="form-horizontal" role="form">
+					            <div class="form-group">
+					                <label for="message">Message <span style="color: red;">*</span></label>
+					               <textarea rows="8" type="text" id="message" name="message" class="form-control"></textarea>
+
+					               <button type="submit" class="btn btn-primary" style="margin-top: 20px">Submit</button>
+
+					            </div>
+
+					        </div>
+
+					        
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>		
+
 	
 </div> <!-- End of Container div -->
 
-<footer class="footer">
-      <div class="container">
-        <p >Copyright &copy; Christopher Darling, All Rights Reserved.</p>
-        <p >Created with Bootstrap Framework</p>
-        <ul class="list-inline">
-        	<li><a href="https://github.com/chrisdarling"><img src="icons/git.png" href="https://github.com/chrisdarling"></a></li>
-        	<li><a href=""><img src="icons/link.png"></a></li>
-        	<li><a href="mailto:cdarlin119@gmail.com"><img src="icons/gmail.png"></a></li>
-        </ul>
-      </div>
+<footer class="footer" id="footer">
+    <div class="navbar navbar-inverse custom navbar-static-bottom">
+      	<div  class="contianer">
+      		<div class="row">
+      			<div class="col-xs-12 col-sm-12  col-md-10 col-md-offset-1">
+      				<div style="margin-left: 15px;" class="row">
+	      				<div class="col-md-4">
+					        <p >Copyright &copy; Christopher Darling, All Rights Reserved.</p>
+					        <p >Created with Bootstrap Framework</p>
+					        <ul class="list-inline">
+					        	<li><a href="https://github.com/chrisdarling"><img src="icons/git.png" href="https://github.com/chrisdarling"></a></li>
+					        	<li><a href=""><img src="icons/link.png"></a></li>
+					        	<li><a href="mailto:cdarlin119@gmail.com"><img src="icons/gmail.png" style="padding-top: 5px;"></a></li>
+					        </ul>
+				        </div>
+				        <div class="col-md-4"></div>
+				        <div class="col-md-4">
+	      					<ul id="navigation-footer" class="list-inline">
+						        <li><a href="#home" class="nav-link">Home</a></li> 	&#9702;
+						        <li><a href="#projects" class="nav-link">Projects</a></li> &#9702;
+						        <li><a href="#contact" class="nav-link">Contact</a></li>
+						      </ul>
+	      				</div>
+
+
+			        </div>
+		        </div>
+		    </div>    
+       </div>
+    </div>
 </footer>
 </div>
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
+ <script type="text/javascript">
+ 	$(document).ready(function() {
+ 		
+
+ 		$(document).on('click', '.nav-link', function() {
+		  $('html, body').animate({
+		        scrollTop: ($( $(this).attr('href') ).offset().top)
+		    }, 500);
+		    return false;
+
+		});
+
+		
+
+
+
+ 	});	 	
+ </script>
+
 </body>
 </html>

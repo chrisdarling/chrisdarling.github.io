@@ -14,7 +14,7 @@ $('#convert').on('click', function() {
 	$('#content').append('<p>Loading currency exchange rates...</p>');
 
 	if (isNaN(fromVal) || fromVal < 0) {
-		alert("Invalid data input");
+		$('#toVal').val("Invalid data input");
 	} else {
 		$.ajax( {
 			url: 'http://api.fixer.io/latest',
@@ -70,13 +70,20 @@ $('#convert').on('click', function() {
 	}
 	
 	$('#content').find('p').remove();
+
+
 	
 });
 
 
 
 
-
+$('#clear').on('click', function() {
+		$('#fromVal').val("");
+		$('#toVal').val("");
+		$('#content').find('h3').remove();
+ });
+	
 
 });
 

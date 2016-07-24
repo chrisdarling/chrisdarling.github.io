@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary To Decimal Converter</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+
+
+	<div class="jumbotron">
+	<div class="container">
+		
+  		
+  		<div class="row">
+  		
+		<div class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2" id="binary">
+			<div class="project">
+				<h2>Binary To Decimal Converter</h2>
+				<div class="input-group input-group-lg" id="input">
+					<span class="input-group-addon">Input</span>
+					<input id="binary-input" type="text" class="form-control" placeholder="Enter binary number here">
+				</div>
+
+				
+
+				<div class="input-group input-group-lg" id="output">
+					<span class="input-group-addon">Output</span>
+					<input id="output-bin" type="text" class="form-control" placeholder="" disabled="disabled">
+				</div>
+
+				<button id="convert-bin" type="submit" class = "btn-primary btn-lg">Convert</button>
+				<button id="clear" type="submit" class = "btn-primary btn-lg">Clear</button>
+
+			</div>
+		</div>
+	</div>
+  	</div>	
+	</div>
+
+
+
+
+
+
+<footer class="footer" id="footer">
+    <div class="navbar navbar-inverse custom navbar-static-bottom">
+      	<div  class="contianer">
+      		<div class="row">
+      			<div class="col-xs-12 col-sm-12  col-md-10 col-md-offset-1">
+      				<div style="margin-left: 15px;" class="row">
+	      				<div class="col-md-4">
+					        <p >Copyright &copy; Christopher Darling, All Rights Reserved.</p>
+					        <p >Created with Bootstrap Framework</p>
+					        <ul class="list-inline">
+					        	<li><a href="https://github.com/chrisdarling"><img src="../icons/git.png" href="https://github.com/chrisdarling"></a></li>
+					        	<li><a href=""><img src="../icons/link.png"></a></li>
+					        	<li><a href="mailto:cdarlin119@gmail.com"><img src="../icons/gmail.png" style="padding-top: 5px;"></a></li>
+					        </ul>
+				        </div>
+				        <div class="col-md-4"></div>
+				        <div class="col-md-4">
+	      					<ul id="navigation-footer" class="list-inline">
+						        <li><a href="../" class="nav-link">Home</a></li> 	&#9702;
+						        <li><a href="../#projects" class="nav-link">Projects</a></li> &#9702;
+						        <li><a href="../#contact" class="nav-link">Contact</a></li>
+						      </ul>
+	      				</div>
+
+
+			        </div>
+		        </div>
+		    </div>    
+       </div>
+    </div>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+	function convertBin() {
+		var output =  binaryToDecimal();
+
+		
+		if (output == -1) {
+			$('#output-bin').val("invalid data entered!");
+		} else {
+			var test = 
+			$('#output-bin').val(output);
+		}
+	}
+
+	
+
+	$('#convert-bin').on('click', function() {
+		convertBin();
+
+	});
+
+	$('#clear').on('click', function() {
+		$('#output-bin').val("");
+		$('#binary-input').val("");
+	});
+	
+	
+	
+	function binaryToDecimal() {
+		var input = $('#binary-input').val();
+		var index = (input.length - 1);
+		var binaryEntered = true;
+		var decimalValue = 0;
+
+		for (var i = 0; i < input.length; i++) {
+			var digit = input.charCodeAt(i);
+			if (digit !== 48 && digit !== 49) {
+				binaryEntered = false;
+				break;
+			}
+			if (digit === 49) {
+				decimalValue += Math.pow(2, index);
+			}
+			index--;
+		}
+
+		if (binaryEntered) {
+			return decimalValue;
+		} 
+
+		return -1;
+		
+	}
+
+
+
+});
+	
+	
+
+</script>
+</body>
+</html>
