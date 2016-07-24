@@ -26,7 +26,8 @@
 						<h2>Currency Converter</h2>
 						<div id="content"></div>
 						<div class="row">
-							<div class="col-xs-6">
+							<div class="col-xs-12">
+								<label>Select currency: </label>
 								<select id="convertFrom" class="form-control">
 									<option value="AUD">AUD</option>
 									<option value="BGN">BGN</option>
@@ -41,9 +42,9 @@
 							</div>	
 						</div>			
 
-						<div class="input-group input-group-lg" id="input">
-							<span class="input-group-addon">Amount</span>
-							<input id="fromVal" type="text" class="form-control" placeholder="">
+						<div class="form-group" id="input">
+							<label>Amount: </label>
+							<input id="fromVal" type="text" class="form-control" placeholder="Enter amount...">
 						</div>
 
 						<!---
@@ -51,7 +52,8 @@
 						<input id="fromVal" type="text"></input> ---->
 
 						<div class="row">
-							<div class="col-xs-6">
+							<div class="col-xs-12">
+								<label>Select currency: </label>
 								<select id="convertTo" class="form-control">
 									<option value="AUD">AUD</option>
 									<option value="BGN">BGN</option>
@@ -66,8 +68,8 @@
 							</div>
 						</div>		
 
-						<div class="input-group input-group-lg" id="output">
-							<span class="input-group-addon">Amount</span>
+						<div class="form-group" id="output">
+							<label>Amount: </label>
 							<input id="toVal" type="text" class="form-control" placeholder="" disabled="disabled">
 						</div>
 
@@ -109,7 +111,7 @@
       	<div  class="contianer">
       		<div class="row">
       			<div class="col-xs-12 col-sm-12  col-md-10 col-md-offset-1">
-      				<div style="margin-left: 15px;" class="row">
+      				<div style="margin-left: 15px; margin-right: 15px" class="row">
 	      				<div class="col-md-4">
 					        <p >Copyright &copy; Christopher Darling, All Rights Reserved.</p>
 					        <p >Created with Bootstrap Framework</p>

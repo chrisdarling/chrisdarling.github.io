@@ -20,7 +20,21 @@ h1, h2, h3, h4, h5, h6, p, a {
 .jumbotron {
 	min-height: 100vh;
 	margin: 0 !important;
+	background-color: rgb(43, 47, 60) !important;
+	color: #fff !important;
 }
+
+button {
+	background-color: rgb(26, 188, 156) !important;
+	border-color: #fff !important;
+	
+}
+
+button:active {
+	outline: none !important;
+}
+
+
 
 .project h2 {
 	margin-bottom: 20px;

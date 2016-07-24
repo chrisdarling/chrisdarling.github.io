@@ -1,6 +1,6 @@
 html, body {
 	
-	width: 100% !important;
+  width: 100% !important;
   overflow-x: hidden !important;
 	
 }
@@ -27,6 +27,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 .jumbotron {
 	min-height: 100vh;
 	margin-bottom: 0 !important;
+	background-color: rgb(26, 188, 156) !important;
+	color: #fff !important;
+}
+
+button {
+	background-color: rgb(43, 47, 60)  !important;
+	border-color: #333 !important;
 }
 
 

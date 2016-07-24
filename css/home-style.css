@@ -182,7 +182,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 
  #navigation a {
  	 text-decoration: none;
- 	 color: #fff;
+ 	 color:   #fff;
+ }
+
+ #navigation a:hover {
+   text-decoration: none;
+   color: #ffd8a6;
  }
 
  .jumbotron p {
@@ -196,7 +201,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 
 #project-title {
-	padding-bottom: 20px;
+	margin-bottom: 40px;
 
 }
 
@@ -208,14 +213,18 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 #project-container {
 	min-height: 100vh;
-	margin-top: 20%;
+	margin-top: 10%;
 	margin-bottom: 10%;
 }
 
 #contact-container {
 	min-height: 75vh;
-	margin-top: 20%;
+	margin-top: 10%;
 	margin-bottom: 10%;
+}
+
+#contact-container h1 {
+  margin-bottom: 40px;
 }
 
 #contact {
