@@ -1,4 +1,9 @@
 
+body {
+  overflow-y: scroll !important;
+  overflow: hidden;
+  
+}
 
 body {
 	background-color: #DFE2DB;
