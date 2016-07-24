@@ -141,33 +141,36 @@
 					</div>
 					<div class="row">
 						<div style="margin-right: 15px; margin-left: 15px;" class="col-md-12">
-							
+						<form action="https://formspree.io/cdarlin119@gmail.com" method="POST">	
 							<div class="form-horizontal" role="form">
 					            <div class="form-group">
 					                <label for="name">Name <span style="color: red;">*</span></label>
-					                <input type="text" class="form-control" id="name">
+					                <input type="text" class="form-control" name="name" id="name">
 					            </div>
 					        </div>
 
 					        <div class="form-horizontal" role="form">
 					            <div class="form-group">
 					                <label for="email">Email <span style="color: red;">*</span></label>
-					                <input type="email" class="form-control" id="email">
+					                <input type="email" class="form-control" name="_replyto" id="email">
 					            </div>
 					        </div>
+
+					        <input type="hidden" name="_subject" value="New submission!" />
+					        <input type="hidden" name="_format" value="plain" />
 
 					        <div class="form-horizontal" role="form">
 					            <div class="form-group">
 					                <label for="message">Message <span style="color: red;">*</span></label>
 					               <textarea rows="8" type="text" id="message" name="message" class="form-control"></textarea>
 
-					               <button type="submit" class="btn btn-primary" style="margin-top: 20px">Submit</button>
+					               <button type="submit" value="Send" class="btn btn-primary" style="margin-top: 20px">Submit</button>
 
 					            </div>
 
 					        </div>
 
-					        
+					    </form>    
 						</div>
 					</div>
 				</div>	
