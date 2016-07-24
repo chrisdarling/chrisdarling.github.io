@@ -29,12 +29,13 @@ h1, h2, h3, h4, h5, h6, p, a {
     @media only screen and (min-width : 320px) {
     	.jumbotron  {
 
-    		height: 50vh;
+    		min-height: 50vh;
     		background-attachment: scroll;
     	}
 
     	#navigation {
     		font-size: 1em;
+
     	}
 
     	.jumbotron p em  {
@@ -47,12 +48,13 @@ h1, h2, h3, h4, h5, h6, p, a {
     @media only screen and (min-width : 480px) {
     	.jumbotron  {
 
-    		height: 50vh;
+    		min-height: 50vh;
     		background-attachment: scroll;
     	}
 
     	#navigation {
     		font-size: 1em;
+
     	}
 
     	.jumbotron p em  {
@@ -61,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     	.jumbotron-content {
     		margin-top: 0;
-			margin-bottom: 0;
+			  margin-bottom: 0;
     	}
 
 
@@ -72,7 +74,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     @media only screen and (min-width : 768px) {
     	.jumbotron  {
 
-    		height: 75vh;
+    		min-height: 75vh;
     		background-attachment: scroll;
     	}
 
@@ -82,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     	.jumbotron-content {
     		margin-top: 0;
-			margin-bottom: 0;
+			  margin-bottom: 0;
     	}
 
     }
@@ -116,7 +118,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     	.jumbotron-content {
     		margin-top: 20%;
-			margin-bottom: 20%;
+			  margin-bottom: 20%;
     	}
     }
 

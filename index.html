@@ -197,7 +197,7 @@
 				        </div>
 				        <div class="col-md-4"></div>
 				        <div class="col-md-4">
-	      					<ul id="navigation-footer" class="list-inline">
+	      					<ul id="navigation-footer" class="list-inline" style="display: none">
 						        <li><a href="#home" class="nav-link">Home</a></li> 	&#9702;
 						        <li><a href="#projects" class="nav-link">Projects</a></li> &#9702;
 						        <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -217,21 +217,21 @@
  <script src="js/bootstrap.min.js"></script>
  <script type="text/javascript">
  	$(document).ready(function() {
- 		
 
+ 	
  		$(document).on('click', '.nav-link', function() {
 		  $('html, body').animate({
 		        scrollTop: ($( $(this).attr('href') ).offset().top)
 		    }, 500);
 		    return false;
 
-		    $('#form').validate({
-		    	onsubmit: false
-		    });
+
 
 		});
 
-		
+		$('#form').validate(function() {
+		    	$('#form').submit();
+		 });
 
 
 
