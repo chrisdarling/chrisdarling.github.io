@@ -15,6 +15,12 @@ html, body {
    min-width: 100%;
 }
 
+input {
+  font-size: 16px !important;
+
+
+}
+
 
 .navbar.navbar-default.navbar-static-top {
   margin: 0;
