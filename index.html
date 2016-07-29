@@ -263,8 +263,10 @@
 
 		$('.nav-link').on('click', function() {
 
-			$('.navbar-toggle').click();
-				console.log("hello");
+			if ($(window).width() <= 768 ) {
+				$('.navbar-toggle').click();
+			}
+			
 		});
 
 
