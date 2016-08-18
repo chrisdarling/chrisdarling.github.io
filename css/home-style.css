@@ -1,5 +1,5 @@
 body {
-  margin-top: 51px !important;
+  margin-top: 81px !important;
 }
 
 
@@ -23,6 +23,19 @@ input {
 
 }
 
+.navbar {
+  min-height: 70px;
+  font-size: 16px;
+}
+
+.navbar-header {
+  min-height: 70px;
+}
+
+#nav-container {
+      margin-top: 10px;
+}
+
 
 .navbar.navbar-default.navbar-static-top {
   margin: 0;
@@ -30,7 +43,7 @@ input {
 
 .navbar-inverse a { color: #fff !important; }
 
-.navbar-inverse a:hover { background: rgb(96, 115, 120) !important; }
+
 
 
 .navbar.navbar-inverse.custom {
