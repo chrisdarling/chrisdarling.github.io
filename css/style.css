@@ -1,0 +1,46 @@
+body {
+  font-size: 2em;
+}
+
+p {
+  padding-top: 10px;
+}
+
+#heading {
+  padding-top: 40px;
+}
+
+.project .project-link {
+  padding-top: 10px !important;
+  padding-right: 10px;
+  font-size: 0.9em;
+  color: #269d6a;
+  text-decoration: none;
+}
+
+.section-head {
+  color: #c2c2c2;
+  border-bottom: 1px #eee solid;
+  padding-bottom: 10px;
+}
+
+.project {
+  padding: 30px 0px;
+}
+
+#about p {
+  font-size: 0.8em;
+  padding-top: 20px;
+}
+
+#about .social {
+  padding-top: 20px;
+}
+
+footer {
+  padding: 100px 0px 50px 0px;
+}
+
+footer p {
+  font-size: 0.7em;
+}
