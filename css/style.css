@@ -29,6 +29,10 @@ p {
   padding: 30px 0px;
 }
 
+.project p {
+  font-size: 0.9em
+}
+
 #about p {
   font-size: 0.8em;
   padding-top: 20px;
